@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "IT 블로그 운영 시작 🎯"
+title: "[STUDY_0] IT 블로그 운영 시작 🎯"
 date: 2025-03-17 10:00:00 +0900
 categories: [Infra_Study]
 tags: [intro, 자격증, 인프라]
