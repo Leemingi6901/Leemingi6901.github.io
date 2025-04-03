@@ -30,19 +30,6 @@ comments:
   provider: disqus
   disqus:
     shortname: mingi-blog
-  utterances:
-    repo: Leemingi6901/Leemingi6901.github.io
-    issue_term: pathname
-  giscus:
-    repo: Leemingi6901/Leemingi6901.github.io
-    repo_id: dummy-repo-id
-    category: General
-    category_id: dummy-category-id
-    mapping: pathname
-    strict: 0
-    input_position: bottom
-    lang: en
-    reactions_enabled: 1
 
 assets:
   self_host:
@@ -58,29 +45,17 @@ pwa:
 analytics:
   google:
     id: G-XXXXXXXXXX
-  goatcounter:
-    id: mingi-blog
-  umami:
-    id: dummy-umami-id
-    domain: analytics.mingi.com
-  matomo:
-    id: dummy-matomo-id
-    domain: matomo.mingi.com
-  cloudflare:
-    id: dummy-cloudflare-id
-  fathom:
-    id: dummy-fathom-id
 
 pageviews:
   provider: goatcounter
 
 webmaster_verifications:
-  google: dummy-google-code
-  bing: dummy-bing-code
-  alexa: dummy-alexa-code
-  yandex: dummy-yandex-code
-  baidu: dummy-baidu-code
-  facebook: dummy-facebook-code
+  google: dummy-code
+  bing: dummy-code
+  alexa: dummy-code
+  yandex: dummy-code
+  baidu: dummy-code
+  facebook: dummy-code
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
