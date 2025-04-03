@@ -6,9 +6,9 @@ lang: en
 timezone: Asia/Seoul
 
 title: "Mengi's IT Blog"
-tagline: "A text-focused Jekyll theme"
+tagline: "Network & Infrastructure Specialist"
 description: >-
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Network & Infrastructure Specialist
 
 url: "https://leemingi6901.github.io"
 baseurl: ""
