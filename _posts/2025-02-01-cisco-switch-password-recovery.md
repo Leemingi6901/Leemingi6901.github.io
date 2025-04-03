@@ -1,6 +1,6 @@
 ---
 title: "[Network] Cisco 스위치 패스워드 분실 시 초기화 가이드"
-date: 2025-04-04 09:00:00 +0900
+date: 2025-02-01 09:00:00 +0900
 categories: [Network]
 tags: [Cisco, Switch, Password Recovery, 실무팁]
 ---
