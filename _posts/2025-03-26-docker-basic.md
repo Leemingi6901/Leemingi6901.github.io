@@ -2,7 +2,7 @@
 layout: post
 title: "[STUDY_2] 도커(Docker) 기본 명령어와 사용시 주의사항"
 date: 2025-03-26 09:00:00 +0900
-categories: [INFRA_STUDY]
+categories: [Infra_Study]
 tags: [docker, container, cli, infra, study]
 ---
 
