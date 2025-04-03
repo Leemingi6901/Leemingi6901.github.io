@@ -30,7 +30,7 @@ paginate: 10
 avatar: /assets/img/profile.png
 
 comments:
-  provider: ""  # 댓글 시스템 사용 안함
+  provider: false  # 댓글 시스템 사용 안함
 
 assets:
   self_host:
