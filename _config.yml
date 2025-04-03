@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 lang: en
 timezone: Asia/Seoul
 
-title: "Mingi's IT Blog"
+title: "Mengi's IT Blog"
 tagline: "A text-focused Jekyll theme"
 description: >-
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -17,7 +17,7 @@ github:
   username: Leemingi6901
 
 social:
-  name: "Mingi LEE"
+  name: "Mengi LEE"
   email: leemingi69012@gmail.com
   links:
     - https://twitter.com/leemingi6901
@@ -30,7 +30,7 @@ paginate: 10
 avatar: /assets/img/profile.png
 
 comments:
-  provider: false  # 댓글 시스템 사용 안함
+  provider: true  # 댓글 시스템 사용 안함
 
 assets:
   self_host:
