@@ -2,7 +2,7 @@
 layout: post
 title: "[STUDY_1] 인프라 관리자의 클라우드 이해하기"
 date: 2025-03-24 10:00:00 +0900
-categories: [INFRA_STUDY]
+categories: [Infra_Study]
 tags: [cloud, azure, openstack, infrastructure]
 ---
 
