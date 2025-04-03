@@ -1,8 +1,8 @@
 lang: en
 timezone: Asia/Seoul
 
-title: "Mingi's It Blog"
-tagline: "A text-focused Jekyll theme"
+title: "Mingi's IT Blog"
+tagline: "Notes on Network, Security & Infra Ops"
 description: >-
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
@@ -15,23 +15,39 @@ social:
   name: "Mingi LEE"
   email: leemingi69012@gmail.com
   links:
-    - https://twitter.com/username
+    - https://twitter.com/leemingi6901
     - https://github.com/Leemingi6901
 
-# theme_mode: light
+theme_mode: light
 
 toc: true
 paginate: 10
 baseurl: ""
 
-avatar: "" # /assets/img/profile.png ← 프로필 이미지 사용시 주석 해제
+avatar: /assets/img/profile.png
 
 comments:
-  provider: ""  # 댓글 미사용 시 빈 문자열로 설정
+  provider: disqus
+  disqus:
+    shortname: mingi-blog
+  utterances:
+    repo: Leemingi6901/Leemingi6901.github.io
+    issue_term: pathname
+  giscus:
+    repo: Leemingi6901/Leemingi6901.github.io
+    repo_id: dummy-repo-id
+    category: General
+    category_id: dummy-category-id
+    mapping: pathname
+    strict: 0
+    input_position: bottom
+    lang: en
+    reactions_enabled: 1
 
 assets:
   self_host:
     enabled: false
+    env: production
 
 pwa:
   enabled: true
@@ -41,30 +57,30 @@ pwa:
 
 analytics:
   google:
-    id: ""
+    id: G-XXXXXXXXXX
   goatcounter:
-    id: ""
+    id: mingi-blog
   umami:
-    id: ""
-    domain: ""
+    id: dummy-umami-id
+    domain: analytics.mingi.com
   matomo:
-    id: ""
-    domain: ""
+    id: dummy-matomo-id
+    domain: matomo.mingi.com
   cloudflare:
-    id: ""
+    id: dummy-cloudflare-id
   fathom:
-    id: ""
+    id: dummy-fathom-id
 
 pageviews:
-  provider: ""
+  provider: goatcounter
 
 webmaster_verifications:
-  google: ""
-  bing: ""
-  alexa: ""
-  yandex: ""
-  baidu: ""
-  facebook: ""
+  google: dummy-google-code
+  bing: dummy-bing-code
+  alexa: dummy-alexa-code
+  yandex: dummy-yandex-code
+  baidu: dummy-baidu-code
+  facebook: dummy-facebook-code
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
