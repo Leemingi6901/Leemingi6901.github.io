@@ -1,5 +1,5 @@
 ---
-title: "[STUDY_0] 네트워크 스위치 L1~L7 계층별 역할과 기능 총정리"
+title: "[Network] 네트워크 스위치 L1~L7 계층별 역할과 기능 총정리"
 date: 2025-01-20 09:00:00 +0900
 categories: [Network]
 tags: [Network, OSI 7계층, Switch, 실무팁]
