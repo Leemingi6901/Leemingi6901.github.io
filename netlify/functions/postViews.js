@@ -1,36 +1,41 @@
-const admin = require("firebase-admin");
-const serviceAccount = require("./firebase-key.json"); // Firebase 인증키
+const fs = require('fs');
+const path = require('path');
 
-if (!admin.apps.length) {
-  admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
-  });
-}
+const DATA_FILE = '/tmp/views.json'; // Netlify의 임시 저장 경로
 
-const db = admin.firestore();
-
-exports.handler = async function(event) {
+exports.handler = async function (event) {
   const slug = event.queryStringParameters.slug;
   if (!slug) {
     return {
       statusCode: 400,
-      body: 'Missing slug'
+      body: 'Missing slug parameter'
     };
   }
 
-  const docRef = db.collection("postViews").doc(slug);
-  const doc = await docRef.get();
-
-  let currentViews = 0;
-  if (doc.exists) {
-    currentViews = doc.data().views || 0;
+  let data = {};
+  try {
+    if (fs.existsSync(DATA_FILE)) {
+      const raw = fs.readFileSync(DATA_FILE);
+      data = JSON.parse(raw);
+    }
+  } catch (err) {
+    console.error('Failed to read file:', err);
   }
 
-  await docRef.set({ views: currentViews + 1 });
+  // 기존 조회수 불러오기
+  const current = data[slug] || 0;
+  data[slug] = current + 1;
+
+  // 저장
+  try {
+    fs.writeFileSync(DATA_FILE, JSON.stringify(data));
+  } catch (err) {
+    console.error('Failed to write file:', err);
+  }
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ views: currentViews + 1 }),
+    body: JSON.stringify({ views: data[slug] }),
     headers: {
       'Access-Control-Allow-Origin': '*'
     }
