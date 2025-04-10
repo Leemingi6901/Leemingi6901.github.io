@@ -2,10 +2,12 @@
 
 <script>
   const slug = window.location.pathname;
-  fetch(`https://YOUR_NETLIFY_SITE.netlify.app/.netlify/functions/postViews?slug=${slug}`)
+  fetch(`https://sweet-trifle-0882f1.netlify.app/.netlify/functions/postViews?slug=${slug}`)
     .then(res => res.json())
     .then(data => {
       document.getElementById("post-views").innerText = `${data.views}회 조회됨`;
     })
-    .catch(err => console.error('조회수 실패:', err));
+    .catch(() => {
+      document.getElementById("post-views").innerText = `조회수 표시 실패`;
+    });
 </script>
