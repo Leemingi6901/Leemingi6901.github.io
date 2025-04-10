@@ -37,7 +37,9 @@ exports.handler = async function (event) {
     statusCode: 200,
     body: JSON.stringify({ views: data[slug] }),
     headers: {
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type'
     }
   };
 };
