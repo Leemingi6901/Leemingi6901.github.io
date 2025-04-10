@@ -137,3 +137,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+scripts:
+  - /assets/js/custom-visits.js
