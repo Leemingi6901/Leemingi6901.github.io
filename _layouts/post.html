@@ -1,13 +1,36 @@
-<p><small id="post-views">조회수 로딩중...</small></p>
+---
+layout: default
+title: {{ page.title }}
+---
 
-<script>
-  const slug = window.location.pathname;
-  fetch(`https://sweet-trifle-0882f1.netlify.app/.netlify/functions/postViews?slug=${slug}`)
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById("post-views").innerText = `${data.views}회 조회됨`;
-    })
-    .catch(() => {
-      document.getElementById("post-views").innerText = `조회수 표시 실패`;
-    });
-</script>
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date: "%B %d, %Y" }}</p>
+  </header>
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <footer>
+    <p><small id="post-views">조회수 로딩중...</small></p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slug = window.location.pathname;
+        fetch(`https://sweet-trifle-0882f1.netlify.app/.netlify/functions/postViews?slug=${slug}`)
+          .then(res => res.json())
+          .then(data => {
+            const viewEl = document.getElementById("post-views");
+            if (viewEl) viewEl.innerText = `${data.views}회 조회됨`;
+          })
+          .catch(err => {
+            console.error("조회수 오류:", err);
+            const viewEl = document.getElementById("post-views");
+            if (viewEl) viewEl.innerText = `조회수 표시 실패`;
+          });
+      });
+    </script>
+  </footer>
+</article>
