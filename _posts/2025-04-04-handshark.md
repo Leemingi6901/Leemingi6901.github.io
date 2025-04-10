@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "[Network] TCP 3-Way Handshake와 UDP의 차이점 정리"
 date: 2025-04-04 09:00:00 +0900
 categories: [Network]
