@@ -1,0 +1,11 @@
+<p><small id="post-views">조회수 로딩중...</small></p>
+
+<script>
+  const slug = window.location.pathname;
+  fetch(`https://YOUR_NETLIFY_SITE.netlify.app/.netlify/functions/postViews?slug=${slug}`)
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("post-views").innerText = `${data.views}회 조회됨`;
+    })
+    .catch(err => console.error('조회수 실패:', err));
+</script>
