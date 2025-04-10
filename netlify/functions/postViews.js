@@ -17,6 +17,9 @@ exports.handler = async function (event) {
     if (fs.existsSync(DATA_FILE)) {
       const raw = fs.readFileSync(DATA_FILE);
       data = JSON.parse(raw);
+    } else {
+      // 첫 번째 요청이므로 초기 데이터 설정
+      data = {};
     }
   } catch (err) {
     console.error('Failed to read file:', err);
