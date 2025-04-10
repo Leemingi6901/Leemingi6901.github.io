@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+ruby '3.1.0'  # Ruby 버전을 3.1로 설정
+
 gem "jekyll-theme-chirpy", "~> 7.2", ">= 7.2.4"
 
 gem "html-proofer", "~> 5.0", group: :test
