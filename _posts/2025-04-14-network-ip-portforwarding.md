@@ -1,6 +1,6 @@
 ---
 title: "[STUDY_5] 네트워크 입문자를 위한 IP 개념과 포트 포워딩 정리"
-date: 2025-04-15 09:00:00 +0900
+date: 2025-04-14 09:00:00 +0900
 categories: ['Infra_Study']
 tags: ['Network', 'IP', 'Private IP', 'Public IP', '포트포워딩', '인프라']
 ---
