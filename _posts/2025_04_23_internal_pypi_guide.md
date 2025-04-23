@@ -1,3 +1,10 @@
+---
+layout: post
+title: "[STUDY_6] PyPI & Linux Insatll 명령어 기본 개념 정리"
+date: 2025-04-23 09:00:00 +0900
+categories: ['Infra_Study']
+tags: ['Network', 'IP', 'Private IP', 'Public IP', '포트포워딩', '인프라']
+---
 
 # 내부망에서 pip install을 위한 사설 PyPI 저장소 운영 방법
 
