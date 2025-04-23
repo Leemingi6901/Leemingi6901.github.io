@@ -6,7 +6,6 @@ categories: ['Infra_Study']
 tags: ['Docker', '인프라', 'Linux']
 ---
 
-# 내부망에서 pip install을 위한 사설 PyPI 저장소 운영 방법
 안녕하세요. 멩기 입니다.
 
 사내망(Air-Gapped Network) 또는 외부망이 차단된 보안 환경에서는 일반적으로 사용하는 `pip install` 명령어가 작동하지 않습니다. 이는 기본적으로 파이썬의 공식 패키지 저장소인 [PyPI](https://pypi.org)와의 통신이 필요하기 때문입니다.
