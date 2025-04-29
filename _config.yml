@@ -140,3 +140,6 @@ jekyll-archives:
 
 scripts:
   - /assets/js/custom-visits.js
+  
+plugins:
+  - jekyll-sitemap
