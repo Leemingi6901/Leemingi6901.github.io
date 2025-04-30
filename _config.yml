@@ -142,4 +142,6 @@ scripts:
   - /assets/js/custom-visits.js
   
 plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
