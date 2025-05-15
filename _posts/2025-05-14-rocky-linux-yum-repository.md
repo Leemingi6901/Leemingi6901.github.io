@@ -3,8 +3,9 @@ layout: post
 title: "[STUDY_8] Rocky Linux YUM Repository 구성 가이드[내부망]"
 date: 2025-05-14 09:00:00 +0900
 categories: ['Infra_Study']
-tags: [Linux, Rocky, Yum, Repo, Repository, 인프라, Infra]
+tags: [인프라]
 ---
+
 > 이 글은 외부 인터넷이 차단된 폐쇄망(air-gapped) 환경에서 **Rocky Linux YUM 저장소(Repo)** 를 구성하는 과정을 설명합니다. 내부망 서버에 필요한 패키지를 제공하고, 안정적인 시스템 패치와 패키지 관리를 위해 사용됩니다.
 
 ---
