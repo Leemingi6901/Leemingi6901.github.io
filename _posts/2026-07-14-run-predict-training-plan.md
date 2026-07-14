@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[RUN Predict] VDOT·심박존 기반 맞춤 훈련 계획 기능 개발기"
-date: 2026-07-14 21:00:00 +0900
+date: 2026-07-14 09:00:00 +0900
 categories: ['Project']
 tags: [RUN_Predict, Next.js, Prisma, VDOT, 마라톤, 훈련계획, 심박존]
 ---
