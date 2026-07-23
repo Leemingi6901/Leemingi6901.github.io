@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[PROJECT] 새 프로젝트 세팅기 — GitHub 저장소 + OpenClaw로 텔레그램 AI 비서 만들기"
-date: 2026-07-23 22:00:00 +0900
+date: 2026-07-23 21:00:00 +0900
 categories: [Project]
 tags: [GitHub, OpenClaw, Ollama, LLM, Telegram, launchd, qwen3]
 ---
