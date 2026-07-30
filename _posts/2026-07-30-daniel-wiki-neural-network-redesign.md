@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[daniel.wiki] 히어로 뉴럴 네트워크 리디자인기 — 3D에서 2D 행성 그래프까지"
-date: 2026-07-30 20:00:00 +0900
+date: 2026-07-30 08:00:00 +0900
 categories: [Project]
 tags: [Next.js, Three.js, SVG, React, TypeScript, daniel.wiki]
 ---
